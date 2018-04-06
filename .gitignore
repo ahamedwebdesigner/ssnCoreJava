@@ -3,6 +3,7 @@
 RemoteSystemsTempFiles
 Servers
 target
+bin
 .classpath
 .project
 .settings
