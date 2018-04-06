@@ -1,8 +1,8 @@
-"# ssnCoreJava" 
+- class room slides will be uploaded shortly 
 
 
-git init
-git add README.md
-git commit -m "first commit"
+
+usefull commands
+---------------------------------------------------------------------
 git remote add origin https://github.com/ahamedwebdesigner/ssnCoreJava.git
 git push -u origin master
