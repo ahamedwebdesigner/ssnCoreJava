@@ -4,7 +4,7 @@ public abstract class Student {
 	
 	public String name;
 	public int ID;
-	public int MinDaysToPresent;
+	public int MinDaysToPresent =200;
 	
 	public abstract int getfee();
 	
