@@ -2,11 +2,12 @@ package com.ssn.oops.ent;
 
 public class RegularStudent extends Student {
 	
-	//public int MinDaysToPresent = 120;
+	public int MinDaysToPresent = 100;
+	public int bufferDays;
 	
-	public RegularStudent(String name, int iD) {
+	public RegularStudent(String name, int iD,int bufferDays) {
 		super(name, iD);
-		MinDaysToPresent = 100;
+		super.MinDaysToPresent = this.MinDaysToPresent + bufferDays;
 	}
 
 	@Override

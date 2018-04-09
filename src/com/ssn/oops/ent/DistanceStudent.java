@@ -3,11 +3,12 @@ package com.ssn.oops.ent;
 public class DistanceStudent extends Student {
 
 	
-	//public int MinDaysToPresent = 60;
+	public int MinDaysToPresent = 60;
+	public int bufferDays;
 	
-	public DistanceStudent(String name, int iD) {
+	public DistanceStudent(String name, int iD ,int bufferDays) {
 		super(name, iD);
-		MinDaysToPresent = 60;
+		super.MinDaysToPresent = this.MinDaysToPresent+bufferDays;
 	}
 
 	@Override
