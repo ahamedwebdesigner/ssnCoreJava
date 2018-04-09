@@ -1,8 +1,34 @@
 package com.ssn.oops.ent;
 
-public class Student {
+public abstract class Student {
+	
 	public String name;
 	public int ID;
+	public int MinDaysToPresent;
+	
+	public abstract int getfee();
+	
+	
+	public String isElegibleForExam() {
+		
+		System.out.println("========================= ");
+		System.out.println("MinDaysToPresent " + MinDaysToPresent);
+		System.out.println("========================= ");
+		if(getNoDaysPresent() > MinDaysToPresent) {
+			return "elegible" ;
+		}
+		return "not elegible" ;
+		
+		
+		
+	}
+	public int getNoDaysPresent() {
+	  
+		// fetch data from DB
+		return 100;
+		
+	}
+	
 	public String getName() {
 		return name;
 	}
