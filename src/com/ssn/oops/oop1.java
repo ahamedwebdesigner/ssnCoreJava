@@ -12,8 +12,7 @@ public class oop1 {
 		System.out.println(s1.getfee());
 		System.out.println(s1.getNoDaysPresent());
 		System.out.println(s1.isElegibleForExam());
-		
-		
+				
 		
 		Student d1 = new DistanceStudent("ahamed",100,5);
 		System.out.println(d1);
