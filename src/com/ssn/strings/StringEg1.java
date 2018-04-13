@@ -92,10 +92,40 @@ public class StringEg1 {
 		System.out.println(replaceString);
 		System.out.println(replaceString2);*/
 		
-		String s2="Hey, welcome to Ahamed"; 
+		//replacing word
+	/*	String s2="Hey, welcome to Ahamed"; 
 		String replaceString=s2.replace("Ahamed","Syed"); 
-		System.out.println(replaceString); 
+		System.out.println(replaceString); */
 		
+		//9 contains()  If the sequences of characters are found, then it returns true
+		
+/*		String name=" hello how are you doing?"; 
+		System.out.println(name.contains("how are you"));  // returns true
+		System.out.println(name.contains("hello"));        // returns true  
+		System.out.println(name.contains("fine"));         // returns false  
+*/	
+		
+		//10 equals/equalsIgnoreCase
+/*		String s1="hELLo"; 
+		String s2="hello"; 
+		String s3="hi";
+		System.out.println(s1.equalsIgnoreCase(s2));   // returns true
+		System.out.println(s1.equalsIgnoreCase(s3));   // returns false
+		*/
+		
+		//11 StringGetBytes
+/*		String s1="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		byte[] b = s1.getBytes(); 
+		for(int i=0;i<b.length;i++){ 
+			System.out.println(b[i]);
+		}
+		*/
+		
+		   //format
+/*			String output = String.format("%4s = %4d%30s", "joe", 35,"students");
+			System.out.println(output);
+			//System.out.printf("My name is: %s%n", "joe");
+*/		
 	}
 
 }
