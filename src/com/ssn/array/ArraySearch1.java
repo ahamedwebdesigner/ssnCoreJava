@@ -12,6 +12,9 @@ public class ArraySearch1 {
 	    
         // Returns a negative number if the specified key is not found in the array
         System.out.println(  Arrays.binarySearch(array1,9)  );  
+        
+        
+        new Object().
 	    
 	    
 	}
