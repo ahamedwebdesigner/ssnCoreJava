@@ -21,7 +21,7 @@ public class OuterClass {
 	             
 	            // The following statement will give compilation error
 	            // as static nested class cannot directly access non-static membera
-	            // System.out.println("outer_y = " + outer_y);
+	             //System.out.println("outer_y = " + outer_y);
 	         
 	        }
 	 }
