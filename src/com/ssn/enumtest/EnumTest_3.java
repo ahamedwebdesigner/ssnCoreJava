@@ -1,9 +1,15 @@
-package com.ssn.collections.chap1;
+package com.ssn.enumtest;
 
-public class EnumTest {
+
+/*
+ * public enum  must be declared inits own file
+ * - Day enum is declared in DAY.Java as public
+ * - Day enum is used in enum test 
+ */
+public class EnumTest_3 {
 	 Day day;
 	    
-	    public EnumTest(Day day) {
+	    public EnumTest_3(Day day) {
 	        this.day = day;
 	    }
 	    
@@ -28,11 +34,13 @@ public class EnumTest {
 	    }
 	    
 	    public static void main(String[] args) {
-	        EnumTest firstDay = new EnumTest(Day.MONDAY);
+	    	EnumTest_3 firstDay = new EnumTest_3(Day.MONDAY);
 	        firstDay.tellItLikeItIs();
-	        EnumTest thirdDay = new EnumTest(Day.WEDNESDAY);
+	        
+	        EnumTest_3 thirdDay = new EnumTest_3(Day.WEDNESDAY);
 	        thirdDay.tellItLikeItIs();
-	        EnumTest fifthDay = new EnumTest(Day.FRIDAY);
+	        
+	        EnumTest_3 fifthDay = new EnumTest_3(Day.FRIDAY);
 	        fifthDay.tellItLikeItIs();
 //	        EnumTest sixthDay = new EnumTest(Day.SATURDAY);
 //	        sixthDay.tellItLikeItIs();

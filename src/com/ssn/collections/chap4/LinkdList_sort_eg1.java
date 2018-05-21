@@ -1,8 +1,8 @@
-package com.ssn.collections.chap3;
+package com.ssn.collections.chap4;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
 
 class Fruit implements Comparable<Fruit> {
 	private String Name;
@@ -33,12 +33,28 @@ class Fruit implements Comparable<Fruit> {
 		}
 	}
 
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
 }
 
-public class ArrayList_sort_eg1 {
+public class LinkdList_sort_eg1 {
 
 	public static void main(String[] args) {
-		ArrayList<Fruit> FruitBasket = new ArrayList<Fruit>();
+		LinkedList<Fruit> FruitBasket = new LinkedList<Fruit>();
 		FruitBasket.add(new Fruit("Jakfruit", 700));
 		FruitBasket.add(new Fruit("Banana", 30));
 		FruitBasket.add(new Fruit("Greaps", 100));
@@ -49,18 +65,37 @@ public class ArrayList_sort_eg1 {
 		
 		//1 Before Sorting
 		System.out.println(FruitBasket); 
+		System.out.println(FruitBasket.get(1)); 
 		
 		//2 After Sorting
 		
 		// NOte: in order to excuite sort function custom object must me  Comparable
-		//Collections.sort(FruitBasket);    //i. sorting
+		Collections.sort(FruitBasket);    //i. sorting
 		//Collections.reverse(FruitBasket); //ii. reversing the sorted list for desending order
 		
+		/*
 		Collections.sort(FruitBasket, new Fruit.CompareByprice()); 
 		//3 Before Sorting
 		
 		System.out.println(FruitBasket); 
 		
+		//loop
+		
+		for (Fruit fruit : FruitBasket) {
+			System.out.println(fruit.getName());
+		}
+		
+		
+		Iterator<Fruit> FruitBasketIterator = FruitBasket.iterator();
+		while (FruitBasketIterator.hasNext()) {
+			System.out.println("==>"+FruitBasketIterator.next().getName());
+		}
+		
+		FruitBasket.forEach((temp) -> {
+			System.out.println(" == >"+temp);
+		});
+		
+		*/
 	}
 
 }

@@ -1,4 +1,5 @@
-package com.ssn.collections.chap1;
+package com.ssn.enumtest;
+
 
 public enum Day {
 	 SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
