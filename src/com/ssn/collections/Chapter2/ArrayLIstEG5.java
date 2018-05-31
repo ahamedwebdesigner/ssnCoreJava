@@ -11,7 +11,7 @@ import java.util.Set;
 public class ArrayLIstEG5 {
 
 	public static void main(String[] args) {
-		//ListIterater  and Iterator
+		//differance between ListIterater  and Iterator
 		
 		
 		////////////////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-package com.ssn.collections.chap4;
+package com.ssn.collections.Chapter3;
 
 import java.util.Collections;
 import java.util.Comparator;
