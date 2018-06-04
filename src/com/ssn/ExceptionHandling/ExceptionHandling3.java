@@ -32,7 +32,7 @@ public class ExceptionHandling3 {
 		        System.out.println("Line after error Not outputed If there is exception above."); 
 		      }
 		      catch(ArithmeticException e) {
-		    	  System.out.println("** Exception is caught: " +  e.getMessage());
+		    	  System.out.println("** ArithmeticException is caught: " +  e.getMessage());
 		       
 		      } catch (Exception e) {
 		    	  System.out.println("** Exception is caught: " +  e.getMessage());

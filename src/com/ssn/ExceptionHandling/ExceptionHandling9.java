@@ -25,7 +25,7 @@ public class ExceptionHandling9 {
 
 	    try {
 	      if (divisor == 0)
-	        throw new DivideByZeroException("From App: User entered a zero!");
+	        throw new DivideByZeroException();
 
 	      System.out.println("Result: " + (10/divisor));
 	    }

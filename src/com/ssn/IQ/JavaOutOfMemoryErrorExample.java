@@ -13,6 +13,7 @@ public class JavaOutOfMemoryErrorExample {
 			Random random = new Random();
 			// NOTE: the following while look it infinit one 
 			while (true) {
+				System.out.println(random);
 				list.add(random.nextInt());
 			}
 				

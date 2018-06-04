@@ -11,9 +11,9 @@ public class ValidatePhoneNumber {
 		//1. STRING.matches(regx) => true of flase
 		//2. patren.compile -> matcher.match(string) -> t/f
 		
-/*	//matches numbers only
+/*	*/ //matches numbers only
 		  String regexStr = "^[0-9]*$";
-		  System.out.println("8538666004".matches(regexStr));*/
+		  System.out.println("8538666004".matches(regexStr));
 
 		
 /*		//matches 10-digit numbers only
